@@ -14,9 +14,9 @@ const services = [
   { icon: Smartphone, title: "Social Media Covers", desc: "Digital extension of your physical brand." },
 ];
 
-export default function ServicesGrid() {
+export default function ServicesGrid({ id }: { id?: string }) {
   return (
-    <section className="w-full bg-brand-black text-brand-offwhite py-32 border-b border-white/10 relative overflow-hidden">
+    <section id={id} className="w-full bg-brand-black text-brand-offwhite py-32 border-b border-white/10 relative overflow-hidden">
       {/* Background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-acid/5 rounded-full blur-[120px] pointer-events-none"></div>
 
